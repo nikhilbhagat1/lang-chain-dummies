@@ -43,7 +43,7 @@ def ice_breaker_with(name:str) -> str:
         input_variables=["information"], template=summary_template
     )
 
-    llm = ChatOllama(model="mistral")
+    llm = ChatOllama(model="llama3")
     #llm = ChatOllama(model="mistral")
 
     chain = summary_prompt_template | llm | StrOutputParser()
