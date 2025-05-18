@@ -13,7 +13,7 @@ def ice_breaker() -> str:
     summary_template = """
     Act as Hiring Manager,  Given information {information} about a person a linkedin
     1. review the profile
-    2. if it will be your profile what will you add mention it in detail.
+    2. write a short summary
     """
 
     summary_prompt_template = PromptTemplate(
